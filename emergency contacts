@@ -1,0 +1,39 @@
+
+import speech_recognition as sr
+import webbrowser
+import os
+import pyautogui
+import tkinter as tk
+import pyttsx3
+import json
+
+# Create a recognizer object
+r = sr.Recognizer()
+
+current_directory = os.getcwd()
+# Initialize the speech recognizer and text-to-speech engine
+r = sr.Recognizer()
+engine = pyttsx3.init()
+
+def speak(text):
+    engine.say(text)
+    engine.runAndWait()
+
+# Define a function to take user command and perform tasks
+def perform_task(command):
+    if "shutdown" in command:
+        # Stop listening and close the window
+        window.destroy()
+    elif "calculator" in command:
+        os.system('start calc.exe') 
+        speak ("opening Calculator")
+    elif "map" in command:
+        webbrowser.open('https://www.google.com/maps')
+        speak ("opening Google Map")
+
+    elif "add emergency contact" in command:
+        add_emergency_contact()
+    elif "call emergency contact" in command:
+        contacts = read_contacts()
+        if contacts:
+            speak("Calling emergency contact")
