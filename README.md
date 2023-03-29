@@ -1,0 +1,4 @@
+# MY-FYP-AGENT-VOICE-Drive-Safe-
+This abstract discusses the development of an agent voice program in Python designed to reduce accidents caused by distracted driving. The program will be installed in cars and will utilize voice command technology to allow drivers to control various functions of the car without taking their hands off the wheel or eyes off the road.
+
+The objective of the program is to create a voice assistant that can perform various tasks based on user commands. The program uses speech recognition to listen to user commands and performs actions such as opening applications, controlling music playback, adjusting volume, and opening system tools such as task manager and control panel. The program also includes a graphical user interface (GUI) with buttons to initiate certain actions. The program is named "Agent's Voice".
